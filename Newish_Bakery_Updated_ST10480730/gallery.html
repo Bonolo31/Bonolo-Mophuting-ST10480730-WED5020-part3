@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en-ZA">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <meta name="description" content="Browse photographs of bakery breads, celebration cakes and fresh pastries from the Newish Bakery project.">
+ <meta name="theme-color" content="#482c23">
+ <title>Bakery Gallery | Newish Bakery</title>
+ <link rel="icon" href="images/newish-logo.jpg" type="image/jpeg">
+ <link rel="stylesheet" href="CSS/style.css">
+ <script src="JS/script.js" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
+ <div class="announcement">Fresh ideas for everyday treats &amp; special occasions <span aria-hidden="true">✦</span> <a href="enquiry.html">Ask about a custom order</a></div>
+ <header class="site-header">
+  <div class="container header-inner">
+   <a class="brand" href="index.html" aria-label="Newish Bakery home"><img src="images/newish-logo.jpg" alt="" width="58" height="58"><span class="brand-type"><strong>NEWISH</strong><small>BAKERY</small></span></a>
+   <button class="menu-toggle" id="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav"><span aria-hidden="true">☰</span> <span class="menu-text">Menu</span></button>
+   <nav class="site-nav" id="site-nav" aria-label="Main navigation"><a href="index.html" >Home</a>
+<a href="about.html" >About</a>
+<a href="services.html" >Menu</a>
+<a href="gallery.html" aria-current="page">Gallery</a>
+<a href="enquiry.html" >Special Orders</a>
+<a href="contact.html" >Contact</a></nav>
+  </div>
+ </header>
+<main id="main-content">
+<section class="page-banner"><div class="container"><span class="eyebrow">A LOOK INSIDE OUR WORLD</span><h1>Made to be <em>enjoyed.</em></h1><p>A small collection of the bakery photographs supplied for this project. Select an image to see it enlarged.</p></div></section>
+<section class="section"><div class="container"><div class="gallery-grid">
+ <figure class="gallery-item gallery-large"><button class="gallery-open" type="button" data-full="images/fresh-pastries.jpg" data-caption="Golden pastries on display" aria-label="Enlarge photograph of a pastry display"><img src="images/fresh-pastries.jpg" alt="Tray filled with golden pastries" width="678" height="452"><span class="zoom-label" aria-hidden="true">View photo ↗</span></button><figcaption>Golden pastry display</figcaption></figure>
+ <figure class="gallery-item"><button class="gallery-open" type="button" data-full="images/chocolate-cake.jpg" data-caption="Chocolate celebration cake" aria-label="Enlarge chocolate celebration cake photograph"><img src="images/chocolate-cake.jpg" alt="Chocolate cake covered with chocolate decorations" width="460" height="666"><span class="zoom-label" aria-hidden="true">View photo ↗</span></button><figcaption>Chocolate celebration cake</figcaption></figure>
+ <figure class="gallery-item"><button class="gallery-open" type="button" data-full="images/artisan-bread.jpg" data-caption="Rustic artisan bread" aria-label="Enlarge artisan bread photograph"><img src="images/artisan-bread.jpg" alt="Rustic round bread loaf on linen" width="452" height="678"><span class="zoom-label" aria-hidden="true">View photo ↗</span></button><figcaption>Rustic artisan bread</figcaption></figure>
+ <figure class="gallery-item gallery-wide"><button class="gallery-open" type="button" data-full="images/berry-pastry.jpg" data-caption="Cream pastry with fruit" aria-label="Enlarge berry pastry photograph"><img src="images/berry-pastry.jpg" alt="Cream pastry topped with a strawberry and sauce" width="452" height="678"><span class="zoom-label" aria-hidden="true">View photo ↗</span></button><figcaption>A sweet fruit-filled treat</figcaption></figure>
+</div><p class="gallery-note">The images are examples provided with the student project. They are not a verified catalogue of currently available products.</p></div></section>
+<dialog class="lightbox" id="lightbox" aria-label="Enlarged bakery photograph"><div class="lightbox-frame"><button type="button" class="lightbox-close" id="lightbox-close" aria-label="Close enlarged photograph">×</button><img id="lightbox-image" alt="Enlarged bakery photograph" src="images/fresh-pastries.jpg"><p id="lightbox-caption"></p></div></dialog>
+<section class="section cta-section"><div class="container"><span class="eyebrow">LOVE WHAT YOU SEE?</span><h2>Let's chat about <em>a special order.</em></h2><a class="btn btn-light" href="enquiry.html">Send an enquiry <span aria-hidden="true">↗</span></a></div></section>
+</main>
+<footer class="site-footer">
+  <div class="container footer-grid">
+   <div><a href="index.html" class="footer-brand">Newish <em>Bakery</em></a><p>Fresh bakes, thoughtful treats and a little sweetness for any occasion.</p><small>Student website project. Product availability and business details must be confirmed with the bakery.</small></div>
+   <div><h2>Explore</h2><a href="about.html">Our story</a><a href="services.html">Bakery menu</a><a href="gallery.html">Photo gallery</a><a href="enquiry.html">Special orders</a></div>
+   <div><h2>Get in touch</h2><a href="contact.html">Contact details</a><a href="enquiry.html">Enquire about a cake</a><p>Serving the local community — location to be confirmed.</p></div>
+  </div>
+  <div class="container footer-bottom"><span>© 2026 Newish Bakery · Student portfolio website</span><span>Built with HTML, CSS &amp; JavaScript</span></div>
+ </footer>
+</body>
+</html>

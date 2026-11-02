@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en-ZA">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <meta name="description" content="Ask Newish Bakery about custom cakes, special events and bakery product enquiries.">
+ <meta name="theme-color" content="#482c23">
+ <title>Special Orders | Newish Bakery</title>
+ <link rel="icon" href="images/newish-logo.jpg" type="image/jpeg">
+ <link rel="stylesheet" href="CSS/style.css">
+ <script src="JS/script.js" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
+ <div class="announcement">Fresh ideas for everyday treats &amp; special occasions <span aria-hidden="true">✦</span> <a href="enquiry.html">Ask about a custom order</a></div>
+ <header class="site-header">
+  <div class="container header-inner">
+   <a class="brand" href="index.html" aria-label="Newish Bakery home"><img src="images/newish-logo.jpg" alt="" width="58" height="58"><span class="brand-type"><strong>NEWISH</strong><small>BAKERY</small></span></a>
+   <button class="menu-toggle" id="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav"><span aria-hidden="true">☰</span> <span class="menu-text">Menu</span></button>
+   <nav class="site-nav" id="site-nav" aria-label="Main navigation"><a href="index.html" >Home</a>
+<a href="about.html" >About</a>
+<a href="services.html" >Menu</a>
+<a href="gallery.html" >Gallery</a>
+<a href="enquiry.html" aria-current="page">Special Orders</a>
+<a href="contact.html" >Contact</a></nav>
+  </div>
+ </header>
+<main id="main-content">
+<section class="page-banner"><div class="container"><span class="eyebrow">SOMETHING TO CELEBRATE?</span><h1>Let's plan <em>your order.</em></h1><p>Tell us what you have in mind. This form prepares an email draft; an order is only confirmed after the bakery replies.</p></div></section>
+<section class="section"><div class="container steps-grid"><div><span class="step-num">01</span><h2>Pick your treat</h2><p>Choose a cake, pastry or bread option — or describe something different.</p></div><div><span class="step-num">02</span><h2>Share the details</h2><p>Tell us your date, approximate servings and any special requests.</p></div><div><span class="step-num">03</span><h2>Send your enquiry</h2><p>Your email app opens with a draft that you can review and send.</p></div></div></section>
+<section class="section section-alt"><div class="container contact-layout"><div class="form-intro"><span class="eyebrow">SPECIAL ORDER ENQUIRY</span><h2>Tell us what you're <em>looking for.</em></h2><p>Fill in the details and we'll prepare an email message for you. This website doesn't collect orders into a database or guarantee availability.</p><img src="images/chocolate-cake.jpg" alt="Decorated chocolate celebration cake" width="460" height="666"></div>
+<form class="contact-form" id="order-form" novalidate data-form-kind="order"><div class="field-row"><div class="field"><label for="full-name">Your name <span aria-hidden="true">*</span></label><input name="name" id="full-name" autocomplete="name" required minlength="2" placeholder="Your full name"><small class="field-error" id="full-name-error"></small></div><div class="field"><label for="email">Email address <span aria-hidden="true">*</span></label><input type="email" name="email" id="email" autocomplete="email" required placeholder="you@example.com"><small class="field-error" id="email-error"></small></div></div>
+ <div class="field-row"><div class="field"><label for="order-item">What would you like? <span aria-hidden="true">*</span></label><select id="order-item" name="item" required><option value="">Choose an option</option><option>Artisan Bread</option><option>Chocolate Celebration Cake</option><option>Berry Cream Pastry</option><option>Fresh Pastry Assortment</option><option>Custom Celebration Cake</option><option>Daily Bread Selection</option><option>Other / not sure yet</option></select><small class="field-error" id="order-item-error"></small></div><div class="field"><label for="order-date">Preferred date (optional)</label><input type="date" id="order-date" name="date"><small class="help-text">This is a request, not a confirmed booking.</small></div></div>
+ <div class="field"><label for="order-message">Your order details <span aria-hidden="true">*</span></label><textarea id="order-message" name="message" rows="6" required minlength="10" placeholder="Tell us the occasion, servings, flavour, collection questions or other requests"></textarea><small class="field-error" id="order-message-error"></small></div>
+ <button class="btn btn-primary" type="submit">Prepare email enquiry <span aria-hidden="true">↗</span></button><p class="form-status" role="status" aria-live="polite"></p><p class="help-text">An email application must be installed or configured. Press Send in that application to deliver the enquiry. Recipient address must be confirmed by the client.</p>
+</form></div></section>
+</main>
+<footer class="site-footer">
+  <div class="container footer-grid">
+   <div><a href="index.html" class="footer-brand">Newish <em>Bakery</em></a><p>Fresh bakes, thoughtful treats and a little sweetness for any occasion.</p><small>Student website project. Product availability and business details must be confirmed with the bakery.</small></div>
+   <div><h2>Explore</h2><a href="about.html">Our story</a><a href="services.html">Bakery menu</a><a href="gallery.html">Photo gallery</a><a href="enquiry.html">Special orders</a></div>
+   <div><h2>Get in touch</h2><a href="contact.html">Contact details</a><a href="enquiry.html">Enquire about a cake</a><p>Serving the local community — location to be confirmed.</p></div>
+  </div>
+  <div class="container footer-bottom"><span>© 2026 Newish Bakery · Student portfolio website</span><span>Built with HTML, CSS &amp; JavaScript</span></div>
+ </footer>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en-ZA">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <meta name="description" content="Get in touch with Newish Bakery for general questions, business details or bakery enquiries.">
+ <meta name="theme-color" content="#482c23">
+ <title>Contact Us | Newish Bakery</title>
+ <link rel="icon" href="images/newish-logo.jpg" type="image/jpeg">
+ <!-- Leaflet powers the interactive illustrative map on this page. -->
+ <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+ <link rel="stylesheet" href="CSS/style.css">
+ <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin="" defer></script>
+ <script src="JS/script.js" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
+ <div class="announcement">Fresh ideas for everyday treats &amp; special occasions <span aria-hidden="true">✦</span> <a href="enquiry.html">Ask about a custom order</a></div>
+ <header class="site-header">
+  <div class="container header-inner">
+   <a class="brand" href="index.html" aria-label="Newish Bakery home"><img src="images/newish-logo.jpg" alt="" width="58" height="58"><span class="brand-type"><strong>NEWISH</strong><small>BAKERY</small></span></a>
+   <button class="menu-toggle" id="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav"><span aria-hidden="true">☰</span> <span class="menu-text">Menu</span></button>
+   <nav class="site-nav" id="site-nav" aria-label="Main navigation"><a href="index.html" >Home</a>
+<a href="about.html" >About</a>
+<a href="services.html" >Menu</a>
+<a href="gallery.html" >Gallery</a>
+<a href="enquiry.html" >Special Orders</a>
+<a href="contact.html" aria-current="page">Contact</a></nav>
+  </div>
+ </header>
+<main id="main-content">
+<section class="page-banner"><div class="container"><span class="eyebrow">SAY HELLO</span><h1>We'd love to <em>hear from you.</em></h1><p>Have a question about our products or the bakery? You can prepare an email using the contact form below.</p></div></section>
+<section class="section"><div class="container contact-layout"><div class="contact-details"><span class="eyebrow">CONTACT INFORMATION</span><h2>Questions? <em>Ask away.</em></h2><p>The following contact details come from the original project and should be verified with Newish Bakery before public launch.</p>
+<div class="detail-block"><span class="detail-icon" aria-hidden="true">✉</span><div><h3>Email</h3><a href="mailto:info@newishbakery.co.za">info@newishbakery.co.za</a><p class="help-text">Provided in the original website; confirm ownership.</p></div></div>
+<div class="detail-block"><span class="detail-icon" aria-hidden="true">⌂</span><div><h3>Location</h3><p>Location and collection address to be confirmed with the bakery.</p></div></div>
+<div class="detail-block"><span class="detail-icon" aria-hidden="true">◷</span><div><h3>Opening hours</h3><p>Contact the bakery to confirm current opening times.</p></div></div>
+<a class="btn btn-outline" href="enquiry.html">Need a custom order?</a></div>
+<form class="contact-form" id="contact-form" novalidate data-form-kind="contact"><h2>Send a general enquiry</h2><p>Complete the fields below to prepare a message in your email app.</p><div class="field-row"><div class="field"><label for="full-name">Your name <span aria-hidden="true">*</span></label><input name="name" id="full-name" autocomplete="name" required minlength="2" placeholder="Your full name"><small class="field-error" id="full-name-error"></small></div><div class="field"><label for="email">Email address <span aria-hidden="true">*</span></label><input type="email" name="email" id="email" autocomplete="email" required placeholder="you@example.com"><small class="field-error" id="email-error"></small></div></div>
+<div class="field"><label for="contact-topic">Question type</label><select name="topic" id="contact-topic"><option>General question</option><option>Product information</option><option>Collection arrangements</option><option>Other</option></select></div>
+<div class="field"><label for="contact-message">Your message <span aria-hidden="true">*</span></label><textarea id="contact-message" name="message" rows="6" required minlength="10" placeholder="How can we help?"></textarea><small class="field-error" id="contact-message-error"></small></div>
+<button class="btn btn-primary" type="submit">Prepare email message <span aria-hidden="true">↗</span></button><p class="form-status" role="status" aria-live="polite"></p><p class="help-text">This prepares an email draft; it does not send it automatically.</p></form></div></section>
+<section class="section section-map" aria-labelledby="map-heading">
+  <div class="container">
+    <div class="map-heading-row">
+      <div>
+        <span class="eyebrow">FIND US</span>
+        <h2 id="map-heading">Let's put Newish <em>on the map.</em></h2>
+        <p>Explore South Africa using the map below. We're awaiting the bakery's verified street address before adding a shop or collection pin.</p>
+      </div>
+      <a class="btn btn-outline map-external" href="https://www.openstreetmap.org/#map=5/-28.6/24.5" target="_blank" rel="noopener noreferrer">Open full map <span aria-hidden="true">↗</span></a>
+    </div>
+    <div id="bakery-map" class="bakery-map" role="region" aria-label="Interactive map of South Africa, shown for illustration only">
+      <p class="map-loading">Loading interactive map…</p>
+    </div>
+    <div class="map-fallback" id="map-fallback" hidden role="status">
+      <strong>Map preview unavailable.</strong>
+      <p>An internet connection and permission to load map tiles are needed. Try the published site or use the full map link above.</p>
+    </div>
+    <noscript><p class="map-fallback">JavaScript is needed for the interactive map. You can still open the full map using the link above.</p></noscript>
+    <p class="map-disclaimer">Map information: general South Africa overview, <strong>not a Newish Bakery address</strong>. The client must confirm their location before a business marker or directions are added. Map data © OpenStreetMap contributors.</p>
+  </div>
+</section>
+</main>
+<footer class="site-footer">
+  <div class="container footer-grid">
+   <div><a href="index.html" class="footer-brand">Newish <em>Bakery</em></a><p>Fresh bakes, thoughtful treats and a little sweetness for any occasion.</p><small>Student website project. Product availability and business details must be confirmed with the bakery.</small></div>
+   <div><h2>Explore</h2><a href="about.html">Our story</a><a href="services.html">Bakery menu</a><a href="gallery.html">Photo gallery</a><a href="enquiry.html">Special orders</a></div>
+   <div><h2>Get in touch</h2><a href="contact.html">Contact details</a><a href="enquiry.html">Enquire about a cake</a><p>Serving the local community — location to be confirmed.</p></div>
+  </div>
+  <div class="container footer-bottom"><span>© 2026 Newish Bakery · Student portfolio website</span><span>Built with HTML, CSS &amp; JavaScript</span></div>
+ </footer>
+</body>
+</html>
